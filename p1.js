@@ -15,7 +15,6 @@ out.
 ]
 */
 
-
 /*
 1. create a new empty array of the same size of an INPUT_ARRAY
 2. detect 0 in the INPUT_ARRAY 

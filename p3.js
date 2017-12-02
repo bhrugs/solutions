@@ -5,29 +5,16 @@ e.g. [x,y,z], [10,20,30]
 prints [x,10,y,20,z,30]
 */
 
-const ALPHABET = ["a", "b", "c", "d", "e"];
+const ALPHABET = ["a", "b", "c", "d", "e", "d", "e"];
 const THOUSANDS = [1000, 2000, 3000, 4000];
-var result = "[";
-var undefinedHandler, thousandsUndefinedHandler;
+var result = [];
 
 for(var i=0; i<ALPHABET.length || i<THOUSANDS.length; i++) {
-    
-    if(ALPHABET[i]) {
-        alphabetUndefinedHandler = ALPHABET[i] + ",";
-    } else {
-        alphabetUndefinedHandler = "";
+    if (ALPHABET[i]) {
+        result.push(ALPHABET[i]);
     }
-    if(THOUSANDS[i]) {
-        thousandsUndefinedHandler = THOUSANDS[i];
-    } else {
-        thousandsUndefinedHandler = "";
-    }
-    result = result + alphabetUndefinedHandler + thousandsUndefinedHandler;
-
-    if(i >= THOUSANDS.length || i >= ALPHABET.length) { 
-    }else {
-        result = result +",";
+    if (THOUSANDS[i]) {
+        result.push(THOUSANDS[i]);
     }
 }
-result = result + "]";
-console.log(result);
+console.log("["+result.toString()+"]");

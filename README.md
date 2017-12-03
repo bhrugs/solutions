@@ -13,5 +13,5 @@ to run in vscode
 
 ---- as of 7:26pm EST 2nd Dec 2017 ----
 - attempted p1, p3, p4, p5, p6, p7 - total 6
-- out of which 5 brings the result correctly - p1, p3, p4, p6, p7 
+- out of which 5 bring the result correctly - p1, p3, p4, p6, p7 
 - work in progress for p5
